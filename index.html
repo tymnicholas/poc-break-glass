@@ -32,7 +32,12 @@
                 </div>
                 <div class="markdown-legend">
                     <p><strong>Legend:</strong></p>
-                    <p>2 breaklines = 1 paragraph.</p>
+                    <p>A space = 1 paragraph.</p>
+                    <p>Example:</p>
+                    <p>This is paragraph 1. It can be any length.</p>
+                    <p></p>
+                    <p>This is paragraph 2. It is comes after an empty line above.</p>
+                    <p></p>
                     <p>&lt;b&gt; means bolded words etc.</p>
                     <p>what other formatting are we offering</p>
                 </div>
@@ -76,6 +81,7 @@
             })
             .then(response => response.json())
             .then(result => {
+                console.log(result);
                 showAlert("Submission successful!", "alert-success");
             })
             .catch(error => {
