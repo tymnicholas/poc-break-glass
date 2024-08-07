@@ -34,6 +34,10 @@
                     <input type="text" id="title" name="title">
                 </div>
                 <div class="form-group">
+                    <label for="author">Section: <span class='notbold'>(<i>e.g. companies-markets/telcos-media-tech</i> or <i>realtime/singapore</i>)</span></label>
+                    <input type="text" id="section" name="section">
+                </div>
+                <div class="form-group">
                     <label for="meatOfForm">Content:</label>
                     <textarea id="meatOfForm" class="large-textbox" name="meatOfForm"></textarea>
                 </div>
@@ -207,6 +211,9 @@
         }
         .box {
             margin-bottom: 1cm; 
+        }
+        .notbold {
+            font-weight: normal;
         }
     </style>
 </body>
